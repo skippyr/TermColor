@@ -80,7 +80,7 @@ publish_info_items = []
 for item in publish_items:
     print()
     print(f'Publishing for platform "{item.get_os_name()} {item.get_cpu_arch()}":')
-    zip_file = os.path.join(publish_directory, f'{project_name} for {item.get_os_name()} {item.get_cpu_arch()}.zip')
+    zip_file = os.path.join(publish_directory, f'{project_name}.for.{item.get_os_name()}.{item.get_cpu_arch()}.zip')
     publish_item(item)
     zip_item(zip_file, item)
     publish_info_items.append(PublishInfo(zip_file))
@@ -90,4 +90,4 @@ print('Published your project to all platforms.')
 print()
 
 for item in publish_info_items:
-    print(f'{item.get_sha256sum()} {os.path.basename(item.get_zip_file()).replace(' ', '.')}')
+    print(f'{item.get_sha256sum()} {os.path.basename(item.get_zip_file())}')
