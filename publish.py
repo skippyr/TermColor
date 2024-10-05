@@ -74,7 +74,9 @@ def zip_item(zip_file, item):
     ])))}', shell=True)
 
 clean()
+
 publish_info_items = []
+
 for item in publish_items:
     print()
     print(f'Publishing for platform "{item.get_os_name()} {item.get_cpu_arch()}":')
@@ -86,5 +88,6 @@ for item in publish_items:
 print()
 print('Published your project to all platforms.')
 print()
+
 for item in publish_info_items:
-    print(f'{os.path.basename(item.get_zip_file()).replace(' ', '.')}  {item.get_sha256sum()}')
+    print(f'{item.get_sha256sum()} {os.path.basename(item.get_zip_file()).replace(' ', '.')}')
