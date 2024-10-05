@@ -28,7 +28,7 @@ internal static class WindowsDriver
 
         if (GetConsoleMode(handle, out uint mode))
         {
-            SetConsoleMode(handle, mode);
+            SetConsoleMode(handle, mode | ENABLE_VIRTUAL_TERMINAL_PROCESSING);
         }
     }
 }

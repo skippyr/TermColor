@@ -53,7 +53,7 @@ internal sealed class NewCommand : Command
                         StringTransformer.TransformToSpacedTitleCase(Git.Repository.Name ?? Path.GetFileNameWithoutExtension(arguments[0]))),
                 Author = new Developer
                 {
-                    Name = StringInputWidget.Read("Enter the name of the author", Git.User.Name),
+                    Name = StringInputWidget.Read("Enter the name of the author", Git.User.Name ?? Environment.UserName),
                     Email = EmailInputWidget.Read("Enter the e-mail of the author", Git.User.Email)
                 },
                 License = StringInputWidget.Read("Enter the license of the theme", Git.Repository.License ?? "BSD-3-Clause License"),
