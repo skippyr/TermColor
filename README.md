@@ -18,7 +18,7 @@ A terminal software to port terminal themes from a single theme file written in 
 <p align="center">
   <img alt="" src="assets/preview.png" width=1020 />
 </p>
-<p align="center"><strong>Caption:</strong> TermColor running on MacOS previewing and porting an example theme. Terminal theme is <a href="https://github.com/skippyr/flamerial">Flamerial</a>. Font is Hack (patched by the <a href="https://www.nerdfonts.com/font-downloads">Nerd Fonts project</a>).</p>
+<p align="center"><strong>Caption:</strong> TermColor running on MacOS previewing and porting an example theme. Terminal theme is <a href="https://github.com/skippyr/flamerial">Flamerial</a>. Shell theme is <a href="https://github.com/skippyr/river-dreams">River Dreams</a>. Font is Hack (patched by the <a href="https://www.nerdfonts.com/font-downloads">Nerd Fonts project</a>).</p>
 
 Supported terminal emulators are:
 
